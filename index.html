@@ -31,7 +31,7 @@
         @keyframes SVG-ANIMATION {
             0% {
                 fill: #d796e7;
-                
+
             }
 
             50% {
@@ -86,20 +86,21 @@
                 tooltip.style.display = 'block';
                 tooltip.textContent = classroomName;
             })
-            
+
             classroom.addEventListener('mousemove', (e) => {
                 tooltip.style.left = (e.pageX + 20) + "px";
                 tooltip.style.top = (e.pageY - 20) + "px";
             })
-            
+
             classroom.addEventListener('mouseout', (e) => {
                 tooltip.style.display = 'none';
             })
-            
+
             classroom.addEventListener('click', (e) => {
                 alert('Du klickade på ' + classroom.id.replace('_', '').toUpperCase());
             })
         })
     </script>
 </body>
+
 </html>
